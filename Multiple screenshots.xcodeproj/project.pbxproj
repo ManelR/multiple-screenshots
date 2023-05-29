@@ -13,7 +13,19 @@
 		3B0D62D52A1A82A5001E01B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0D62D32A1A82A5001E01B0 /* Main.storyboard */; };
 		3B0D62D72A1A82A6001E01B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0D62D62A1A82A6001E01B0 /* Assets.xcassets */; };
 		3B0D62DA2A1A82A6001E01B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0D62D82A1A82A6001E01B0 /* LaunchScreen.storyboard */; };
+		3B0D62E82A1A8D18001E01B0 /* Multiple_screenshotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D62E72A1A8D18001E01B0 /* Multiple_screenshotsUITests.swift */; };
+		3B50D1D22A2509CC00B97FD0 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50D1D12A2509CC00B97FD0 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B0D62EB2A1A8D18001E01B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B0D62C22A1A82A5001E01B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B0D62C92A1A82A5001E01B0;
+			remoteInfo = "Multiple screenshots";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3B0D62CA2A1A82A5001E01B0 /* Multiple screenshots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multiple screenshots.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,20 @@
 		3B0D62D62A1A82A6001E01B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0D62D92A1A82A6001E01B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B0D62DB2A1A82A6001E01B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0D62E52A1A8D18001E01B0 /* Multiple screenshotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multiple screenshotsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0D62E72A1A8D18001E01B0 /* Multiple_screenshotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiple_screenshotsUITests.swift; sourceTree = "<group>"; };
+		3B50D1D12A2509CC00B97FD0 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3B0D62C72A1A82A5001E01B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B0D62E22A1A8D18001E01B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				3B0D62CC2A1A82A5001E01B0 /* Multiple screenshots */,
+				3B0D62E62A1A8D18001E01B0 /* Multiple screenshotsUITests */,
 				3B0D62CB2A1A82A5001E01B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				3B0D62CA2A1A82A5001E01B0 /* Multiple screenshots.app */,
+				3B0D62E52A1A8D18001E01B0 /* Multiple screenshotsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +89,23 @@
 				3B0D62DB2A1A82A6001E01B0 /* Info.plist */,
 			);
 			path = "Multiple screenshots";
+			sourceTree = "<group>";
+		};
+		3B0D62E62A1A8D18001E01B0 /* Multiple screenshotsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B50D1D02A2509BB00B97FD0 /* fastlane */,
+				3B0D62E72A1A8D18001E01B0 /* Multiple_screenshotsUITests.swift */,
+			);
+			path = "Multiple screenshotsUITests";
+			sourceTree = "<group>";
+		};
+		3B50D1D02A2509BB00B97FD0 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				3B50D1D12A2509CC00B97FD0 /* SnapshotHelper.swift */,
+			);
+			path = fastlane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +128,24 @@
 			productReference = 3B0D62CA2A1A82A5001E01B0 /* Multiple screenshots.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3B0D62E42A1A8D18001E01B0 /* Multiple screenshotsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0D62ED2A1A8D18001E01B0 /* Build configuration list for PBXNativeTarget "Multiple screenshotsUITests" */;
+			buildPhases = (
+				3B0D62E12A1A8D18001E01B0 /* Sources */,
+				3B0D62E22A1A8D18001E01B0 /* Frameworks */,
+				3B0D62E32A1A8D18001E01B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B0D62EC2A1A8D18001E01B0 /* PBXTargetDependency */,
+			);
+			name = "Multiple screenshotsUITests";
+			productName = "Multiple screenshotsUITests";
+			productReference = 3B0D62E52A1A8D18001E01B0 /* Multiple screenshotsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +158,10 @@
 				TargetAttributes = {
 					3B0D62C92A1A82A5001E01B0 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					3B0D62E42A1A8D18001E01B0 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 3B0D62C92A1A82A5001E01B0;
 					};
 				};
 			};
@@ -116,6 +179,7 @@
 			projectRoot = "";
 			targets = (
 				3B0D62C92A1A82A5001E01B0 /* Multiple screenshots */,
+				3B0D62E42A1A8D18001E01B0 /* Multiple screenshotsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +192,13 @@
 				3B0D62DA2A1A82A6001E01B0 /* LaunchScreen.storyboard in Resources */,
 				3B0D62D72A1A82A6001E01B0 /* Assets.xcassets in Resources */,
 				3B0D62D52A1A82A5001E01B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B0D62E32A1A8D18001E01B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +215,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B0D62E12A1A8D18001E01B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0D62E82A1A8D18001E01B0 /* Multiple_screenshotsUITests.swift in Sources */,
+				3B50D1D22A2509CC00B97FD0 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B0D62EC2A1A8D18001E01B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B0D62C92A1A82A5001E01B0 /* Multiple screenshots */;
+			targetProxy = 3B0D62EB2A1A8D18001E01B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3B0D62D32A1A82A5001E01B0 /* Main.storyboard */ = {
@@ -334,6 +422,38 @@
 			};
 			name = Release;
 		};
+		3B0D62EE2A1A8D18001E01B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.mroca.Multiple-screenshotsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Multiple screenshots";
+			};
+			name = Debug;
+		};
+		3B0D62EF2A1A8D18001E01B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.mroca.Multiple-screenshotsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Multiple screenshots";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +471,15 @@
 			buildConfigurations = (
 				3B0D62DF2A1A82A6001E01B0 /* Debug */,
 				3B0D62E02A1A82A6001E01B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B0D62ED2A1A8D18001E01B0 /* Build configuration list for PBXNativeTarget "Multiple screenshotsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0D62EE2A1A8D18001E01B0 /* Debug */,
+				3B0D62EF2A1A8D18001E01B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
